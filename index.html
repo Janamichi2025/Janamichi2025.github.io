@@ -1,15 +1,11 @@
-<div id="stream" style="width:auto; height:80px;"></div>
-<script src="https://sistemahost.com/playergenerator/js/jquery-3.2.1.min.js"></script>
-<script src="https://sistemahost.com/playergenerator/js/player.js"></script>
+<link href="https://sistemahost.com/playergenerator/css/myCast.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
 
+<div class="myCast" id="player"></div>
+<script src="https://sistemahost.com/playergenerator/js/myCast.min.js"></script>
 <script> 
-$('#stream').lunaradio({     streamurl: 'https://http://node-19.zeno.fm:80', 
-    radioname: 'Radio antromix', 
-    coverimage: 'https://imgur.com/kvwx3iO', 
-    onlycoverimage: false,     userinterface: 'small',     backgroundcolor: '#131514', 
-    fontcolor: '#ffffff',     hightlightcolor: '#84c0f5',     fontname: 'Raleway', 
-    googlefont: 'Raleway:wght@100',     fontratio: '0.4',     scroll: 'true', 
-    coverstyle: 'animated',     usevisualizer: 'real',     visualizertype: '5', 
-    streamtype: 'shoutcast2',     shoutcastpath: '/stream',     shoutcastid: '1', 
-    autoplay: 'true',     metadatainterval: '5000',     volume: '100', 
-    usestreamcorsproxy: 'true', }); </script>
+$('#player').myCast({ 
+    URL: 'https://https://stream.zeno.fm/t1rkdhq47vzuv', version: '2', mount_point: '', vertical_layout: false, 
+    bg: 'grey', accent: 'grey', autoplay: false, }); 
+</script>
